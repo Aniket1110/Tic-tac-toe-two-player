@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Page Icon -->
+    <link rel="icon" href="site_icon.jpg" style="border: 1px solid black;border-radius: 50%; size: 2rem;">
+
+    <!-- Page Title -->
+    <title>Tic-Tac-Toe | Aniket Majhi</title>
+
+    <!-- Css file -->
     <link rel="stylesheet" href="tic_tac_toe.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/1e2c9bf03f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+
     <div class="area">
+
     <div class="title" style="margin:10px 0px;" ><h2>Tic Tac Toe</h2></div>
+
     <div class="score">
+
     <div class="user">
-        <img src="images.jpg" alt="user" height="70px" width="70px" style="border-radius: 50%;">
+        
+        <i class="fas fa-user-circle"></i>
         <p >Player1</p>
+        <p>( X )</p>
+
     </div>
+
     <div class="scoreboard">
+
         <h4 style="margin-top:10px;">vs</h4>
 
     </div>
-    <div class="comp">
-        <img src="images.jpg" alt="user" height="70px" width="70px" style="border-radius: 50%;">
+
+    <div class="user">
+
+        <i class="fas fa-user-circle"></i>
         <p>Player2</p>
+        <p>( O )</p>
+
     </div>
+
     </div>
+
     <div class="play">
+
         <h3>Play Now</h3>
+
     </div>
+    
     <div class="grid">
+        
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="cell"></div>
@@ -36,14 +66,21 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="cell"></div>
+
     </div>
+
     </div>
+
     <div class="messege ">
 
         <h4>Game Over</h4>
         <h4 class="winner"></h4>
         <div class="res">New Game</div>
+
     </div>
+
     <script src="tic_tac_toe.js"></script>
+
 </body>
+
 </html>

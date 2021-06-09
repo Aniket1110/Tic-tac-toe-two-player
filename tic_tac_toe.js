@@ -34,7 +34,6 @@ play_now_.addEventListener("click",()=>{
 res_.addEventListener("click",()=>{
     play_now_.innerHTML="New Game";
     mess_.classList.remove("out");
-    mess_.classList.remove("celebration");
     end=false;
     turn=true;
     for( i=0;i<cells_.length;i++){
@@ -85,9 +84,6 @@ for (i=0;i<cells_.length;i++){
             }
             play_now_.innerHTML="New Game";
             mess_.classList.add('out');
-            if(win=='x'||win=='o') { 
-               mess_.classList.add('celebration');
-            }
             winner_.style.margin="20px";
             return;
         }

@@ -5,12 +5,15 @@
 }
 
 body{
+
     display: flex;
     justify-content: center;
     color: white;
     font-weight: bold;
     font-family: sans-serif;
+
 }
+
 .area{
 
     display: flex;
@@ -21,6 +24,7 @@ body{
     font-size: 20px;
     justify-content: center;
     background-image: linear-gradient(rgb(66, 66, 211),rgb(65, 236, 236));
+
 }
 .score{
 
@@ -28,16 +32,30 @@ body{
     justify-content: space-around;
     margin-top: 10px;
     margin: 20px 0px;
-
+    
 }
+
+
+.fas {
+    font-size: 65px;
+    margin: 5px;
+}
+
+.user > p {
+    margin: 5px;
+}
+
 
 .scoreboard{
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
+
 .play{
+
     cursor: pointer;
     border: 1px solid gray;
     width: 300px;
@@ -45,7 +63,9 @@ body{
     margin: auto;
     background-image: linear-gradient(rgb(156, 39, 150),rgb(46, 46, 151));
     border-radius: 40%;
+
 }
+
 .grid{
 
     display: grid;
@@ -58,7 +78,9 @@ body{
     position: relative;
 
 }
+
 .messege{
+
     position: fixed;
     top: 0px;
     left: 0px;
@@ -72,7 +94,9 @@ body{
     background-color: rgba(0, 0, 0, 0.81);
 
 }
+
 .res {
+
     cursor: pointer;
     border: 1px solid gray;
     width: 300px;
@@ -81,23 +105,20 @@ body{
     justify-content: center;
     background-image: linear-gradient(rgb(95, 56, 202),rgb(73, 175, 216));
     border-radius: 40%;
+
 }
 
 .out {
 
     display: flex;
 }
-.celebration{
 
-    background-image: url("new.gif");
-}
 .cell{
 
-    width: 100px;
+    width: 90px;
     display: flex;
     justify-content: center;
-    height: 100px;
-    /* border-radius: 50%; */
+    height: 90px;
     background-image: linear-gradient(rgb(152, 174, 221),rgb(35, 236, 236));
     
 }
@@ -109,17 +130,51 @@ body{
 }
 
 .x::before{
+
     content: 'x';
     color: rgb(28, 28, 224);
     font-size: 70px;
+
 }
+
 .o::before{
+
     content:'o' ;
     color: rgb(23, 23, 206);
     font-size: 70px;
+
 }
 
+@media only screen and (max-width: 360px) {
+    .title {
+        font-size: 18px;
+    }
+    .fas {
+        font-size: 55px;
+    }
+    .cell {
+        width: 70px;
+        height: 70px;
+    }
+    .x::before {
+        font-size: 50px;
+    }
+    .o::before {
+        font-size: 50px;
+    }
+    .res {
+        width: 250px;
+        font-size: 20px;
+    }
+    .play {
+        width: 250px;
+        font-size: 15px;
+    }
+    .messege > h4  {
+        font-size: 20px;
+    }
+    .user > p {
+        font-size: 15px;
+    }
+}
 
-/* .cell{
-    background-image: linear-gradient(rgb(196, 86, 190),rgb(106, 106, 209));
-} */
